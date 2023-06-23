@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gen-ai-apps"
+version = "0.1.0"
+description = "Generating apps using generative AI."
+authors = ["ManishBarnwal <manishbarnwal.iit@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "gen_ai_apps"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.0"
+langchain = "^0.0.209"
+openai = "^0.27.8"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.23.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
